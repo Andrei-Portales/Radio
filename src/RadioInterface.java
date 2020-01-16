@@ -15,4 +15,5 @@ public interface RadioInterface {
 	
 	public boolean estado();
 
+	
 }
