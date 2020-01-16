@@ -16,6 +16,7 @@ public class Radio implements RadioInterface{
 		estado = false;
 		tipoEmisora = "FM";
 		estacionActual = "";
+		
 	}
 	
 	
