@@ -75,7 +75,7 @@ public class Radio implements RadioInterface{
 	@Override
 	public boolean estado() {
 		// TODO Auto-generated method stub
-		return false;
+		return estado;
 	}
 	
 	

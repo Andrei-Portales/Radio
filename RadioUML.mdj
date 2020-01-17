@@ -483,7 +483,7 @@
 											"top": 643,
 											"width": 181.71435546875,
 											"height": 13,
-											"text": "-int: estacionActual",
+											"text": "-String: estacionActual",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1264,7 +1264,8 @@
 								"$ref": "AAAAAAFvr0sjdY+hyWg="
 							},
 							"name": "JButton btnonoff",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -1273,7 +1274,8 @@
 								"$ref": "AAAAAAFvr0sjdY+hyWg="
 							},
 							"name": "JButton btnamfm",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -1282,7 +1284,8 @@
 								"$ref": "AAAAAAFvr0sjdY+hyWg="
 							},
 							"name": "JButton btnAvanzar",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -1291,7 +1294,8 @@
 								"$ref": "AAAAAAFvr0sjdY+hyWg="
 							},
 							"name": "JButton btnGuardar",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -1300,7 +1304,8 @@
 								"$ref": "AAAAAAFvr0sjdY+hyWg="
 							},
 							"name": "JList emisorasGuardadas",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -1309,7 +1314,8 @@
 								"$ref": "AAAAAAFvr0sjdY+hyWg="
 							},
 							"name": "JFrame frame",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -1318,7 +1324,8 @@
 								"$ref": "AAAAAAFvr0sjdY+hyWg="
 							},
 							"name": "JPanel Display",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						}
 					]
 				},
@@ -1395,7 +1402,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFvr0s7NI/LEeE="
 							},
-							"name": "int",
+							"name": "String",
 							"visibility": "private",
 							"type": "estacionActual"
 						},
