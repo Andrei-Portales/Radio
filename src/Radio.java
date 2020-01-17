@@ -28,6 +28,12 @@ public class Radio implements RadioInterface{
 	public void onOff() {
 		// TODO Auto-generated method stub
 		
+		if (estado == false) {
+			estado = true;
+		}else if (estado == true) {
+			estado = false;
+		}
+		
 	}
 	
 	
