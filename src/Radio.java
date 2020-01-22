@@ -1,85 +1,69 @@
-import java.util.ArrayList;
+public class Radio 
+{
+  boolean estado;
+  boolean amFm; 
+  String[] estacionactual;
+  String[] guardadasAm;
+  String[] guardadasFm;
 
-public class Radio implements RadioInterface{
+  public void OnOff(){
+  	if (estado){
+  		estado=false;
+  	}
+  	else{
+  		estado=true;
+  	}
+  }
 
-	private ArrayList<String> frecuenciasAM;
-	private ArrayList<String> frecuenciasFM;
-	private boolean estado;
-	private String tipoEmisora;
-	private String estacionActual;
-	
-	
-	
-	public Radio() {
-		frecuenciasAM = new ArrayList<String>();
-		frecuenciasFM = new ArrayList<String>();
-		estado = false;
-		tipoEmisora = "FM";
-		estacionActual = "";
-		
-	}
-	
-	
-	
-	
-	
-	
-	@Override
-	public void onOff() {
-		// TODO Auto-generated method stub
-		
-		if (estado == false) {
-			estado = true;
-		}else if (estado == true) {
-			estado = false;
-		}
-		
-	}
-	
-	
-	@Override
-	public void cambiarFrecuencia() {
-		// TODO Auto-generated method stub
-		
-	}
-	
-	
-	@Override
-	public void avanzar() {
-		// TODO Auto-generated method stub
-		
-	}
-	
-	
-	@Override
-	public void guardar(int boton) {
-		// TODO Auto-generated method stub
-		
-	}
-	
-	
-	@Override
-	public void seleccionarEmisora(int boton) {
-		// TODO Auto-generated method stub
-		
-	}
-	
-	
-	@Override
-	public String estacionActual() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	
-	
-	@Override
-	public boolean estado() {
-		// TODO Auto-generated method stub
-		return estado;
-	}
-	
-	
-	
-	
-	
+  public void cambiarFrecuencia(){
+  	if (amFm){
+  		amFm=false;
+  	}
+  	else{
+  		amFm=true;
+  	}
+  }
+
+  public void avanzar(){
+  	if (amFm){
+  		if (estacionactual[0]<1610){
+  			estacionactual[0]=estacionactual[0]+10;
+  		} else if (estacionactual[0]==1610){
+  			estacionactual[0]=530;
+  		}
+  	}
+  	else{
+  		if (estacionactual[1]<107.9){
+  			estacionactual[1]=estacionactual[1]+0.2;
+  		} else if (estacionactual[1]==107.9){
+  			estacionactual[1]=87.9;
+  		}
+  	}
+  } 
+
+  public void guardar(int boton){
+  	if (amFm){
+  		guardadasAm[boton]=estacionactual;
+  	}
+  	else{
+  		guardadasFm[boton]=estacionactual;
+  	}
+  }
+
+  public void seleccionarEmisora(int boton){
+  	if (amFm){
+  		estacionactual=guardadasAm[boton];
+  	}
+  	else{
+  		estacionactual=guardadasFm[boton];
+  	}
+  }
+
+  public float EstacionActual(){
+  	return estacionactual;
+  }
+
+  public boolean estado(){
+  	return estado;
+  }
 }
