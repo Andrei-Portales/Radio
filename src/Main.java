@@ -31,7 +31,7 @@ import java.awt.event.MouseEvent;
 public class Main {
 
 	private JFrame frame;
-	private Radio radio;
+	private RadioInterface radio = new Radio(); // cambiar esta linea para probar otros programas
 	private JLabel lblEstado,lblFrecuencia;
 	private JComboBox cbGUardar;
 	private JPanel Display1,Display2;
@@ -64,7 +64,7 @@ public class Main {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
-		radio = new Radio();
+		
 		frame = new JFrame();
 		frame.setBounds(100, 100, 486, 513);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
