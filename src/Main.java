@@ -21,6 +21,13 @@ import javax.swing.event.ListSelectionEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
+/**
+ * 
+ * 	@author Andrei Portales Okrassa 19825
+ *	@author Mariana Morales Ponce 17235
+ */
+
+
 public class Main {
 
 	private JFrame frame;

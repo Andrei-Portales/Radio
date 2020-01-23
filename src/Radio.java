@@ -1,6 +1,12 @@
 import java.text.DecimalFormat;
 
 
+/**
+ * 
+ * 	@author Andrei Portales Okrassa 19825
+ *	@author Mariana Morales Ponce 17235
+ */
+
 
 public class Radio implements RadioInterface{
 
