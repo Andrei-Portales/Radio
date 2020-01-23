@@ -93,9 +93,9 @@ public class Radio implements RadioInterface{
 	public void guardar(int boton) {
 		// TODO Auto-generated method stub
 		if (tipoFrecuencia.equals("FM")) {
-			frecuenciasFM[boton] = fm;
+			frecuenciasFM[boton-1] = fm;
 		}else if(tipoFrecuencia.equals("AM")) {
-			frecuenciasAM[boton] = am;
+			frecuenciasAM[boton-1] = am;
 		}
 	}
 	
@@ -107,9 +107,9 @@ public class Radio implements RadioInterface{
 		// TODO Auto-generated method stub
 		try {
 		if (tipoFrecuencia.equals("FM")) {
-			fm = frecuenciasFM[boton];
+			fm = frecuenciasFM[boton-1];
 		}else if (tipoFrecuencia.equals("AM")) {
-			am = frecuenciasAM[boton];
+			am = frecuenciasAM[boton-1];
 		}
 		}catch(Exception ex) {}
 		

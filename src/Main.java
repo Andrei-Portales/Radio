@@ -221,80 +221,80 @@ public class Main {
 		Display2.add(btn12);
 		btn12.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				radio.seleccionarEmisora(11);
+				radio.seleccionarEmisora(12);
 				setEstado();
 			}
 		});
 		btn6.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				radio.seleccionarEmisora(5);
+				radio.seleccionarEmisora(6);
 				setEstado();
 			}
 		});
 		btn5.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				radio.seleccionarEmisora(4);
+				radio.seleccionarEmisora(5);
 				setEstado();
 			}
 		});
 		btn11.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				radio.seleccionarEmisora(10);
+				radio.seleccionarEmisora(11);
 				setEstado();
 			}
 		});
 		btn10.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				radio.seleccionarEmisora(9);
+				radio.seleccionarEmisora(10);
 				setEstado();
 			}
 		});
 		btn9.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				radio.seleccionarEmisora(8);
+				radio.seleccionarEmisora(9);
 				setEstado();
 			}
 		});
 		btn8.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				radio.seleccionarEmisora(7);
+				radio.seleccionarEmisora(8);
 				setEstado();
 			}
 		});
 		btn7.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				radio.seleccionarEmisora(6);
+				radio.seleccionarEmisora(7);
 				setEstado();
 			}
 		});
 		btn3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				radio.seleccionarEmisora(2);
+				radio.seleccionarEmisora(3);
 				setEstado();
 			}
 		});
 		btn2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				radio.seleccionarEmisora(1);
+				radio.seleccionarEmisora(2);
 				setEstado();
 			}
 		});
 		btn1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				radio.seleccionarEmisora(0);
+				radio.seleccionarEmisora(1);
 				setEstado();
 			}
 		});
 		btn4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				radio.seleccionarEmisora(3);
+				radio.seleccionarEmisora(4);
 				setEstado();
 			}
 		});
 		btnGuardar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				radio.guardar(Integer.parseInt(cbGUardar.getSelectedItem().toString()) - 1);
+				radio.guardar(Integer.parseInt(cbGUardar.getSelectedItem().toString()) );
 				
 			}
 		});
